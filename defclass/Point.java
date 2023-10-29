@@ -37,4 +37,9 @@ public class Point {
     public void afficher(){
         System.out.println("Coordonnees du point (" + x + "," + y + ")");
     }
+    public double distance(Point p){
+        double dx = x - p.x;
+        double dy = y - p.y;
+        return Math.sqrt((dx * dx) + (dy * dy));
+    }
 }
