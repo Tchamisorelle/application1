@@ -34,4 +34,7 @@ public class Point {
         y += vy;
 
     }
+    public void afficher(){
+        System.out.println("Coordonnees du point (" + x + "," + y + ")");
+    }
 }
