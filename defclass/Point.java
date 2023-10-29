@@ -4,13 +4,19 @@ public class Point {
     private double x;
     private double y;
 
-    public Point(double x, double y){
-        this.x = x;
-        this.y = y;
+    public Point(double a, double b){
+        this.x = a;
+        this.y = b;
     }
-    public Point(){
-        this(0.0,0.0);
+    // public Point(){
+    //     this(0.0,0.0);
+    // }
+
+    public Point(Point valpt){
+        this.x = valpt.x;
+        this.y = valpt.y;
     }
+
     public double getX(){
         return x;
     }
